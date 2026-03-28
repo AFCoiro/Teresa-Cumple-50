@@ -1,0 +1,48 @@
+:root {
+  --neon-pink: #ff007f;
+  --neon-cyan: #00e5ff; 
+  --neon-fluor:rgb(212, 255, 112); 
+  --vibrant-purple: #9d00ff;
+
+  --main-black: #050505;
+  --text-white: #ffffff;
+  
+  /* Un sombreado neón para los botones */
+  --neon-glow: 0 0 15px rgba(255, 0, 255, 0.7);
+
+/* Fonts*/
+  --font-hero: 'Bebas Neue', sans-serif;
+  --font-hero-sub:"Monoton", sans-serif;
+  --font-hero-it: "Marck Script", cursive;
+  --font-main: "Montserrat", sans-serif;
+
+  /*FONT SIZE*/
+  --font-h1:70px;
+  --font-h1-n:95px;
+  --font-h2:65px;
+  --font-h3:35px;
+
+  
+  /*Mesures*/
+  --gutter: 15px;
+  --item-spacer: 10px;
+  --section-spacer: 20px;
+
+}
+@media (max-width: 330px) {
+  :root {
+      /*FONT SIZE*/
+  --font-h1:50px;
+  --font-h1-n:65px;
+  --font-h2:45px;
+  --font-h3:18px;
+
+  
+  /*Mesures*/
+  --gutter: 10px;
+  --item-spacer: 8px;
+  --section-spacer: 16px;
+  }
+}
+
+
