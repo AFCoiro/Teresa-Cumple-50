@@ -25,11 +25,11 @@
   
   /*Mesures*/
   --gutter: 15px;
-  --item-spacer: 10px;
-  --section-spacer: 20px;
+  --item-spacer: 20px;
+  --section-spacer: 30px;
 
 }
-@media (max-width: 330px) {
+@media (max-width: 359px) {
   :root {
       /*FONT SIZE*/
   --font-h1:50px;
@@ -40,8 +40,8 @@
   
   /*Mesures*/
   --gutter: 10px;
-  --item-spacer: 8px;
-  --section-spacer: 16px;
+  --item-spacer: 15px;
+  --section-spacer: 25px;
   }
 }
 

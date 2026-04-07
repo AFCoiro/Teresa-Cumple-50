@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Mis 5 y 0 - Tere</title>
+    <title>Maria - Mis 50 ¡Party Bus!</title>
 </head>
     <body>
         <main>
@@ -39,7 +39,7 @@
                 <ul class="action-list">
                     <li><a href="#cuando">📅 CUÁNDO</a></li>
                     <li><a href="#donde">📍 DÓNDE</a></li>
-                    <li><button class="btn-open-modal" type="button" >¡Confirmar!</button></li>
+                    <li><button class="btn-open-modal btn-glow" type="button" >¡Confirmar!</button></li>
                 </ul>
             </nav>
         </main>
@@ -48,7 +48,7 @@
                 <h3>¿Qué se festeja?</h3>
                 <p class="copy">¡Llegaron los 50 y se festejan fuerte! Quiero celebrar esta nueva década rodeada de mis personas favoritas en una noche mágica a bordo del Party Bus.</p>
 
-                <p class="copy">Nada me hace más feliz que brindar, bailar y compartir este momento con vos. ¡Tu lugar ya está reservado! Porfa, confirmame si venís completando el formulario de abajo. ¡Besos y nos vemos pronto!<span>Tere</span></p>
+                <p class="copy">Nada me hace más feliz que brindar, bailar y compartir este momento con vos. ¡Tu lugar ya está reservado! Porfa, confirmame si venís completando el formulario de abajo. ¡Besos y nos vemos pronto!<span>Maria</span></p>
             </article>
         </section>
         <section id="cuando" class="cuando container">
@@ -100,41 +100,61 @@
                     <span>¡Gracias por ser parte de mi noche!</span>
                 </p>
             </div>
-            <div class="modal-section ">
-                <button class="btn-open-modal btn-section" type="button" >¡Confirmar! 🚌</button>
-                <div id="modal" class="modal-overlay">
-    <div class="modal-content"> 
-        <span class="close-modal">&times;</span>
-        <h3>¿Nos vemos en el Bus? 🚌💨</h3>
-        <p>Confirmá tu lugar para el 30/05</p>
-        
-        <form id="form-modal">
-            <div class="form-data">
-                <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+            <div class="modal-section">
+                <button class="btn-open-modal btn-glow" type="button">¡Confirmar! 🚌</button>
+                
+                <dialog id="modal">
+                    <div class="modal-content" id="modal-content"> 
+                        <span class="x-close close-modal">&times;</span>
+                        
+                        <h3>¿Nos vemos en<br class="br-550"> el Bus? 🚌💨</h3>
+                        <p>Confirmá tu lugar para el 02/05</p>
+                        
+                        <form id="form-modal">
+                            <div class="form-data">
+                                <input type="text" id="nombre" placeholder="Ingresá tu Nombre y Apellido" required>
+                                <input type="number" id="dni" placeholder="Ingresá tu DNI" min="100000" step="1" required>
+                            </div>
+                            
+                            <div class="form-selection">
+                                <label class="check-container">
+                                    <input type="radio" name="asistencia" value="si" required>
+                                    <span class="checkmark"></span>
+                                    ¡Obvio que voy! ✨
+                                </label>
+                                <label class="check-container">
+                                    <input type="radio" name="asistencia" value="no" required>
+                                    <span class="checkmark"></span>
+                                    Me la pierdo 😢
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit btn-glow">
+                                ¡Confirmar Asistencia! 🚀
+                            </button>
+                            <div id="spinner"></div>
+                        </form>
+                    </div> 
+                    <div class="modal-content" id="modal-final">
+                        <span class="close-modal x-close">&times;</span>
+                        <h3>¡Enviado con éxito!</h3>
+                        <p>Gracias por confirmar,</p>
+                        <div class="buttons">
+                            <button type="button" class="btn-back btn-glow ">
+                                Volver ⬅️
+                            </button>
+                            <button type="button" class="close-modal btn-glow">
+                                Finalizar ✅
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
             </div>
-            <div class="form-selection">
-                <label class="check-container">
-                    <input type="radio" name="asistencia" value="si" required>
-                    <span class="checkmark"></span>
-                    ¡Obvio que voy! ✨
-                </label>
-                <label class="check-container">
-                    <input type="radio" name="asistencia" value="no" required>
-                    <span class="checkmark"></span>
-                    Me la pierdo 😢
-                </label>
-            </div>
-            <button type="button" class="btn-submit">
-                ¡Confirmar Asistencia! 🚀
-            </button>
-        </form>
-    </div> 
-</div>
         </section>
-
+        
         <footer>
-            <h6>Sitio desarrollado por AFCOIRO - Todos los derechos reservados. Si queres tu propia invitacion, contactate con Agustin@gmail.com</h6>
+            <h6>Sitio desarrollado por Agustín F. Coiro - Si queres tu propio sitio, contactate a agustinfcoiro@gmail.com</h6>
         </footer>
-        <script src="js/main.js"></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
